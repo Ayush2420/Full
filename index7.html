@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert,confirm</title>
+</head>
+<style>
+     .full{
+        padding:8rem;
+        padding-left: 25rem;
+        background-color: powderblue;
+        text-align: center;
+        height: 90hv;
+    } 
+    .page{
+        /* top:50%;
+        left:50%; */
+          padding: 5rem;
+        width:400px; 
+        background-color:rgb(228, 220, 220);
+        
+        border:2px solid black;
+        box-shadow: 1rem 1rem rgba(0,0,0,0.5); 
+    }
+   
+   .login{
+        padding:5px;
+         
+    }
+    .load{
+        width:400px;
+        padding:8px;
+    }
+    h3{
+        color:blue;
+    }
+</style>
+<body>
+    <div class="full">
+    <div class="page">
+    <h3>Sign in</h3>
+    <div class="load">
+    <span>Name  </span> 
+    <input type="text" class="login" placeholder="Name">
+    </div>
+    <div class="load">
+    <span>Email  </span> 
+    <input type="email"class="login" placeholder="@gmail.com">
+    </div>
+    <div class="load">
+    <span>Password  </span> <input type="password" class="login" placeholder="password">
+    </div>
+    <div class="load">
+        <span>Confirm-Password  </span> <input type="password" class="login" placeholder="password">
+    </div>
+    </div>
+</div>
+</div>
+    <script>
+     // alert(" Sign in ")
+         //let name=prompt("What is name ?","guest");
+        //console.log(name);
+        // let deletepost=confirm("Do you want delete");
+        // if(deletepost){
+        //     console.log("Deleted")
+        // }
+        // else{
+        //     console.log("Not Deleted")
+        // }
+        let age=prompt("What age?","Enter your age")
+        if(age<18){
+            alert("Your age is below 18")
+        }
+        else{
+            alert("You are allowed in the club Please Sign in")
+        }
+    </script>
+</body>
+</html>
